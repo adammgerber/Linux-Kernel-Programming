@@ -26,22 +26,33 @@ static struct file_operations fops = {
 	.release = driver_close
 };
 
-
+//defining our number 
+#define MYMAJOR 90
 
 /*This function is called when the module is loaded into the kernel */
 static int __init ModuleInit(void){
 	int retval;
 	printk("Hello, Kernel!\n");
 	/* register device number */
-	retval = register_chrdev(
+	retval = register_chrdev(MYMAJOR, "my_dev_nr", &fops);
+	if(retval == 0){
+		printk("dev_nr - registered devide number Major: %d, Minor: %d\n", MYMAJOR, 0);
+	}
+	else if(retval > 0) {
+		printk("dev_nr - registered device number Major: %d, Minor: %d\n", retval>>20, retval&0xfffff);
+	}else {
+		printk("Could not register device number!\n");
+		return -1;
+	}
+
 	return 0;
 }
 
 /*This function is called when the module is removed from the kernel*/
 static void __exit ModuleExit(void) {
+	unregister_chrdev(MYMAJOR, "my_dev_nr");
 	printk("Goodbye, Kernel\n");
 }
 
 module_init(ModuleInit);
 module_exit(ModuleExit);
-
