@@ -1,0 +1,1 @@
+cmd_/home/dima/LinuxKernelProgramming/SimpleHello/mymodule.mod := { echo  /home/dima/LinuxKernelProgramming/SimpleHello/mymodule.o;  echo; } > /home/dima/LinuxKernelProgramming/SimpleHello/mymodule.mod
