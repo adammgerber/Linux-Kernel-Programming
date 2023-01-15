@@ -26,4 +26,4 @@
 
 ### 8. Check logs for all changes in this module
 `sudo dmesg | tail -n 5`
-
+![final](../Images/logs2.png)
