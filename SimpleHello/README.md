@@ -1,8 +1,8 @@
-### To Load Module
+### Load Module
 `sudo insmod name_of_module.ko`
 
-### To Remove module
+### Remove module
 `sudo rmmod name_of_module`
 
-### To check logs for changes
+### Check logs for changes
 `sudo dmesg | tail`
