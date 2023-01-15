@@ -2,7 +2,7 @@
 
 ### 1. Check for available device numbers
 `cat /proc/devices`
-![numbers](../Images/deviceNumbers)
+![numbers](../Images/deviceNumbers.png)
 
 ### 2. Load module
 `sudo insmod name_of_module.ko`
