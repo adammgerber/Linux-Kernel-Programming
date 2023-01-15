@@ -1,1 +1,0 @@
-cmd_/home/dima/LinuxKernelProgramming/SimpleHello/modules.order := {   echo /home/dima/LinuxKernelProgramming/SimpleHello/mymodule.ko; :; } | awk '!x[$$0]++' - > /home/dima/LinuxKernelProgramming/SimpleHello/modules.order

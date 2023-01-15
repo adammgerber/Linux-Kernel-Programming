@@ -1,1 +1,0 @@
-cmd_/home/dima/LinuxKernelProgramming/mymodule.ko := ld -r -EL  -maarch64elf -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/dima/LinuxKernelProgramming/mymodule.ko /home/dima/LinuxKernelProgramming/mymodule.o /home/dima/LinuxKernelProgramming/mymodule.mod.o;  true
