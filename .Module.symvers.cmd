@@ -1,0 +1,1 @@
+cmd_/home/dima/LinuxKernelProgramming/Module.symvers := sed 's/\.ko$$/\.o/' /home/dima/LinuxKernelProgramming/modules.order | scripts/mod/modpost -m -a  -o /home/dima/LinuxKernelProgramming/Module.symvers -e -i Module.symvers   -T -
