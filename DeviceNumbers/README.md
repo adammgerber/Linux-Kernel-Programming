@@ -24,6 +24,8 @@
 `sudo chmod 666 /dev/mydevice`
 `./test`
 
+![success](../Images/success.png)
+
 ### 8. Check logs for all changes in this module
 `sudo dmesg | tail -n 5`
 ![final](../Images/logs2.png)
